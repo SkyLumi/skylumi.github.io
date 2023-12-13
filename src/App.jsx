@@ -3,6 +3,8 @@ import skylumiLogo from './assets/logo.png'
 import layer1 from './assets/layer_1.png'
 import layer2 from './assets/layer_2.png'
 import pohon_kanan from './assets/pohon_kanan.png'
+import pohon_kiri from './assets/pohon_kiri.png'
+import matahari from './assets/matahari.png'
 import './App.css'
 
 function App() {
@@ -24,9 +26,12 @@ function App() {
         </nav>
         </header>
         <section className="satu">
-          <h1 id='judul'>Syahrial Rafky</h1>
           <img src= {layer1} id='gunung1'/>
+          <img src= {matahari} id='matahari'/>
+          <h1 id='judul'>Syahrial Rafky</h1>
           <img src= {layer2} id='gunung2'/>
+          <img src= {pohon_kanan} id='pohonKanan'/>
+          <img src= {pohon_kiri} id='pohonKiri'/>
         </section>
 
         <section className="dua">
