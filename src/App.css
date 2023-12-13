@@ -4,8 +4,8 @@
 }
 
 .logo {
-  height: 8em;
-  padding: 0.6em;
+  height: 4em;
+  padding: 0em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -14,13 +14,39 @@
 }
 
 .container {
-  max-width: 1600px;
   margin: 0 auto;
+}
+
+header {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  padding: 30px 75px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.navigasi a {
+  text-decoration: none;
+  color:#ffffff;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.navigasi a:hover {
+  background:#00ff95;
+  color:#ffffff;
+
 }
 
 .satu {
   height: 100vh;
-  background: linear-gradient(to bottom, #000000, #8c00ff);
+  background: linear-gradient(to bottom, #00aeff, #fffd94);
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -28,9 +54,22 @@
   justify-content: center;
 }
 
+.satu img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+#judul {
+  position: absolute;
+  font-size: 5em;
+}
+
 .dua {
   height: 100vh;
-  background: linear-gradient(to bottom, #8c00ff, #000000);
+  background: rgb(17, 80, 97);
   display: flex;
   flex-direction: column;
   align-items: center;
