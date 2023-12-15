@@ -1,24 +1,22 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import skylumiLogo from './assets/logo.png'
 import layer1 from './assets/layer_1.png'
 import layer2 from './assets/layer_2.png'
 import pohon_kanan from './assets/pohon_kanan.png'
 import pohon_kiri from './assets/pohon_kiri.png'
 import matahari from './assets/matahari.png'
+import rafky from './assets/rafky.jpg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div className="container">
+      <div>
         <header>
         <a href="https://github.com/SkyLumi" target="_blank">
           <img src= {skylumiLogo} className="logo"/>
         </a>
         <nav className='navigasi'>
-          <a href='#'>Home</a>
           <a href='#'>About me</a>
           <a href='#'>Skills</a>
           <a href='#'>Portofolio</a>
@@ -35,10 +33,11 @@ function App() {
         </section>
 
         <section className="dua">
-        <p>
-          Hi! I'am Syahrial Rafky or you can just call me Rafky to avoid tongue cramps, an undergraduate Information Technology student that can do nothing!
-        </p>
-        <h2>My hard skill</h2>
+          <h2>About Me</h2>
+          <div className='container_row'>
+            <p>I have skills in data scraping, computer vision, and game development. I am a student majoring in Information Technology at the University of Jember. Additionally, I am interested in delving into the field of data forensics.</p>
+            <img src= {rafky}/>
+          </div>
         </section>
       </div>
     </>

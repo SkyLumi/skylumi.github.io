@@ -5,12 +5,16 @@
   margin: 0;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: rgb(17, 80, 97);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+div {
+  margin: 0 auto;
 }
 
 body {
@@ -24,6 +28,9 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+h2 {
+  font-size: 2em;
 }
 
 button {
@@ -44,4 +51,9 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+p {
+  font-size: 1.2em;
+  text-align: left;
+  padding-left: 75px;
 }
