@@ -64,6 +64,14 @@ header {
   font-size: 5em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
 }
+
+#muka {
+  width: 30%;
+  position: relative; /* Change this to relative to participate in the flexbox centering */
+  margin: auto; /* This will center the image horizontally within its parent */
+}
+
+
 /*------------------------------- section dua --------------------*/
 .dua {
   height: 100vh;
@@ -74,13 +82,18 @@ header {
   justify-content: center;
 }
 
+.dua img {
+  position:absolute;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  pointer-events: none;
+}
+
 .container_row {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.dua img {
-  width: 25%;
-  padding: 30px 75px;
-}
