@@ -5,7 +5,7 @@ import layer2 from './assets/layer_2.png'
 import pohon_kanan from './assets/pohon_kanan.png'
 import pohon_kiri from './assets/pohon_kiri.png'
 import matahari from './assets/matahari.png'
-import rafky from './assets/rafky.png'
+import rafky from './assets/Rafky.png'
 import './App.css'
 
 function App() {
