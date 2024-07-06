@@ -42,9 +42,8 @@ header {
 .satu {
   height: 100vh;
   background: linear-gradient(to bottom, #00aeff, #fffd94);
-  margin: 0;
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   pointer-events: none;
@@ -52,7 +51,6 @@ header {
 
 .satu img {
   position:absolute;
-  display: flex;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -65,35 +63,57 @@ header {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
 }
 
-#muka {
-  width: 30%;
-  position: relative; /* Change this to relative to participate in the flexbox centering */
-  margin: auto; /* This will center the image horizontally within its parent */
-}
-
 
 /*------------------------------- section dua --------------------*/
 .dua {
-  height: 100vh;
+  position: relative;
+  padding: 100px;
   background: rgb(17, 80, 97);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 6;
+}
+
+#background_nama {
+  position: absolute;
+  font-size: 7vw;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+  color: white;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: pre; /* Menambahkan baris baru */
 }
 
 .dua img {
-  position:absolute;
   display: flex;
-  bottom: 0;
+  bottom: 10;
   left: 0;
-  width: 50%;
+  width: 100%;
   pointer-events: none;
+  z-index: 1;
 }
-
+/*--------------------------------- container dua ---------------------*/
 .container_row {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
+.container_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.imagebox {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
