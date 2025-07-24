@@ -722,6 +722,10 @@
             transition: all 0.3s ease;
             border: 1px solid rgba(255, 255, 255, 0.1);
             min-width: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
 
         .contact-link:hover {
@@ -732,9 +736,10 @@
         }
 
         .contact-link-icon {
-            font-size: 2rem;
+            width: 48px;
+            height: 48px;
             margin-bottom: 10px;
-            display: block;
+            object-fit: contain;
         }
 
         /* Animations */
@@ -829,6 +834,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#awards">Awards</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -1113,9 +1119,29 @@
                     <div class="timeline-icon">🧰</div>
                     <div class="timeline-content">
                         <div class="timeline-date">2024 - Present</div>
-                        <h3>Lab Infratuktur Teknologi</h3>
+                        <h3>Penelitian - Lab Infratuktur Teknologi</h3>
                         <p class="timeline-location">Universitas Jember, Jawa Timur, Indonesia</p>
-                        <p>Sebagai asisten praktikum dan juga penelitian dosen</p>
+                        <p>Sebagai asisten praktikum dan mengajar sistem operasi >70 mahasiswa dan juga melakukan penelitian dosen</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">🧰</div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Present</div>
+                        <h3>Cybersecurity - UKM Linux and Open Source</h3>
+                        <p class="timeline-location">Universitas Jember, Jawa Timur, Indonesia</p>
+                        <p>Mengajar cybersecurity tentang game hacking kepada anggota internal UKM dan menjadi Ketua Pelaksana Pembinaan CTF</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">🧰</div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - 2024</div>
+                        <h3>Programmer - UKM Linux and Open Source</h3>
+                        <p class="timeline-location">Universitas Jember, Jawa Timur, Indonesia</p>
+                        <p>Membuat website UKM LAOS dan mengajar GIT kepada anggota internal UKM dan menjadi Ketua Pelaksana Website Development Competition</p>
                     </div>
                 </div>
 
@@ -1126,16 +1152,6 @@
                         <h3>Teknologi Informasi</h3>
                         <p class="timeline-location">Universitas Jember, Jawa Timur, Indonesia</p>
                         <p>Mahasiswa aktif Teknologi Informasi Universitas Jember.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-icon">🧰</div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2023 - Present</div>
-                        <h3>UKM Laos</h3>
-                        <p class="timeline-location">Universitas Jember, Jawa Timur, Indonesia</p>
-                        <p>Menjabat sebanyak 8x program kerja dan menjadi 2x ketua pelaksana, 2x BPH, 2x PDD, 2x Acara</p>
                     </div>
                 </div>
 
@@ -1172,19 +1188,19 @@
             </p>
             <div class="contact-links">
                 <a href="mailto:syahrafky@gmail.com" class="contact-link">
-                    <span class="contact-link-icon">📧</span>
+                    <img src="src/contact/gmail.svg" class="contact-link-icon">
                     Email
                 </a>
                 <a href="https://www.linkedin.com/in/syahrial-rafky-599499296/" class="contact-link">
-                    <span class="contact-link-icon">💼</span>
+                    <img src="src/contact/linkedin.svg" class="contact-link-icon">
                     LinkedIn
                 </a>
                 <a href="https://github.com/SkyLumi" class="contact-link">
-                    <span class="contact-link-icon">🐙</span>
+                    <img src="src/contact/github.svg" class="contact-link-icon">
                     GitHub
                 </a>
                 <a href="https://wa.me/+6287766016220" class="contact-link">
-                    <span class="contact-link-icon">📱</span>
+                    <img src="src/contact/whatsapp.svg" class="contact-link-icon">
                     WhatsApp
                 </a>
             </div>
